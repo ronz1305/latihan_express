@@ -2,7 +2,7 @@ import express  from "express";
 import cors from 'cors';
 import bodyParser from 'body-parser';
 import dotenv from 'dotenv';
-import {router} from './router.js';
+import router from './router.js';
 
 
 dotenv.config()
@@ -16,5 +16,5 @@ app.use('/', router)
 
 
 app.listen(port, () => {
-    console.log(`server is running on port ${port}`)
+    console.log(`server is running in port ${port}`)
 })
